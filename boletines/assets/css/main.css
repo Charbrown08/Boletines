@@ -1,0 +1,209 @@
+/* Normalizador de css */
+
+/* 
+Palette:
+ 003049 blue
+ d62828 red
+ F77F00 orange 
+ FCBF49 brown
+ EAE2B7 gray 
+
+ */
+
+ /* import of fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lora:wght@700&display=swap');
+
+
+html{
+    font-family: 'Caveat', cursive;
+    font-family: 'Lora', serif;
+}
+
+a{
+    text-decoration:none;
+    color: #fa709a;
+}
+
+img{
+    max-width:100%;
+    
+}
+
+a:hover{
+    opacity: 10;
+}
+
+a:active{
+    background: red;
+
+}
+
+.title{
+    text-transform:uppercase;
+    text-align: center;
+}
+
+.container{
+    background-image: linear-gradient(to right, rgb(62, 62, 165) 0%, rgb(109, 64, 64) 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.content{
+    max-width: 960px;
+    max-height: 500px;
+    background-color: white;
+    height: 80vh;
+    width: 100%;
+    /* shadow: vertical differnce, horizaontal difference, desemfoque, amplitud y color */
+    box-shadow: 0 3px 6px 10px yellow,10px 3px 6px 10px blue;
+    border-radius: 4px;
+    position: relative;
+    padding: 1.8em;
+    overflow:scroll ; 
+    
+
+}
+
+
+
+.content{
+    padding: 1em;
+}
+td{
+    display: block;
+    width: 100%;
+}
+td:nth-child(1){
+    font-size: 1.5em;
+    font-weight: bold;
+    color:rgb(70, 9, 9)
+
+}
+th{
+    display: none;
+}
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),0 3px 6px rgba(0, 0, 0, 0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.paragraph{
+    line-height: 20px;
+    font-weight: 50px;
+}
+
+.fa-star,.fa-star-o{
+    color: red;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td,.table th{
+    padding: 1em;
+    text-align: left;
+
+}
+
+.table tr:nth-child(even){
+    background-color: #f3e45f5b;
+}
+
+.title-items{
+    /* border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #fa709a;
+    padding-bottom: 1em; */
+
+    border-bottom: #fa709a solid ;
+    padding: 1em;
+    font-size: 2em;
+
+
+}
+
+.main.imag{
+    float: left;
+    margin-right: 1em;
+    height: 250px;
+
+}
+
+.address{
+    font-weight: bold;
+    color: #fa709a;
+    font-size: 1.2em;
+    margin-top: 2em;
+    display: inline-block;
+
+}
+
+.posicion{
+    background-color: #fa709a;
+    color: white;
+    padding: 0.5em;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+@media (min-width: 900px){
+
+    th{
+        display: table-cell;
+
+    }
+
+    td{
+        width: auto;
+        display: table-cell;
+        
+    }
+    td:nth-of-type(1){
+        font-size:1em ;
+    }
+    .content{
+        padding: 1.8em;
+
+    }
+
+
+}
+
+@media (min-height: 550px){
+    .content{
+        height:500px;
+    }
+}
+
+
+
+
+
+
+
+
